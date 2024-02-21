@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "title": "",
+    "features": [
+      { "name": "guest", "value": "6" },
+      { "name": "bedrooms", "value": "3" },
+      { "name": "beds", "value": "4" },
+      { "name": "baths", "value": "2" }
+    ],
+    "offers": [
+      { "name": "Kitchen", "icon": "6" },
+      { "name": "Wifi", "icon": "3" },
+      { "name": "Pool", "icon": "4" },
+      { "name": "TV", "icon": "2" },
+      { "name": "Washer", "icon": "6" },
+      { "name": "Air Conditioning", "icon": "3" }
+    ],
+    "aboutInfo": "Experience Malta like never before in our unique 3-bedroom, 2-bathroom Penthouse in Ta' Xbiex. With stunning sea views overlooking Valletta, this spacious retreat offers the perfect getaway. A fully-equipped kitchen invites culinary adventures.The expansive terrace, complete with a BBQ, is ideal for al fresco dining while enjoying the breathtaking scenery.But the real highlight? Your own private pool, perfect for cooling off or soaking in the Mediterranean sun!"
+  }
+]
