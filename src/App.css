@@ -6,6 +6,7 @@
 }
 
 .swiper-slide {
+  height: auto;
 }
 
 .swiper-button-next,
@@ -28,4 +29,18 @@
   font-size: 20px;
   font-weight: 700;
   color: #ff5c00;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  background: #fff;
+}
+.mySwiper .swiper-pagination-bullet-active {
+  background: #ff5c00;
+}
+.swiper-pagination-bullet {
+  background: #000;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: #ff5c00;
 }

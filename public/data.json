@@ -1,7 +1,117 @@
 [
   {
     "id": 1,
-    "title": "",
+    "title": "Luxury Penthouse with Pool and Seaview in Ta Xbiex, Malta",
+    "licenseNumber": "APT-27101",
+    "features": [
+      { "name": "guest", "value": "6", "icon": "guest" },
+      { "name": "bedrooms", "value": "3", "icon": "bedroom" },
+      { "name": "beds", "value": "4", "icon": "bed" },
+      { "name": "baths", "value": "2", "icon": "bathroom" }
+    ],
+    "offers": {
+      "available": [
+        { "name": "Kitchen", "icon": "kitchen" },
+        { "name": "Wifi", "icon": "wifi" },
+        { "name": "Pool", "icon": "pool" },
+        { "name": "TV", "icon": "tv" },
+        { "name": "Washer", "icon": "washer" },
+        { "name": "Air Conditioning", "icon": "airCondition" },
+        { "name": "Security cameras on poperty", "icon": "cctv" },
+        { "name": "BBQ gril", "icon": "bbq" },
+        { "name": "Smoke alaram", "icon": "smoekeAlarm" },
+        { "name": "Outdoor dining area", "icon": "dining" }
+      ],
+      "notAvailable": [
+        { "name": "Dryer", "icon": "dryer" },
+        { "name": "Essentials", "icon": "essentials" },
+        { "name": "Hot Water", "icon": "water" },
+        { "name": "Carbon monoxide alarm", "icon": "monoAlarm" },
+        { "name": "Heating", "icon": "heating" }
+      ]
+    },
+    "aboutInfo": "Experience Malta like never before in our unique 3-bedroom, 2-bathroom Penthouse in Ta' Xbiex. With stunning sea views overlooking Valletta, this spacious retreat offers the perfect getaway. A fully-equipped kitchen invites culinary adventures.The expansive terrace, complete with a BBQ, is ideal for al fresco dining while enjoying the breathtaking scenery.But the real highlight? Your own private pool, perfect for cooling off or soaking in the Mediterranean sun!",
+    "weArehere": "",
+    "agentInfo": [
+      {
+        "name": "mirko",
+        "number": "+356 99303141",
+        "email": "mirko@holidaysinmalta.eu",
+        "whatsappNumber": "+356 99303141"
+      }
+    ],
+    "imagesArray": [
+      {
+        "src": "https://picsum.photos/600/400",
+        "alt": ""
+      },
+      {
+        "src": "https://picsum.photos/600/400",
+        "alt": ""
+      },
+      {
+        "src": "https://picsum.photos/600/400",
+        "alt": ""
+      },
+      {
+        "src": "https://picsum.photos/600/400",
+        "alt": ""
+      },
+      {
+        "src": "https://picsum.photos/600/400",
+        "alt": ""
+      }
+    ],
+    "companyInfo": {
+      "name": "Karma Real Estates LTD",
+      "logo": "https://holidaysinmalta.eu/wp-content/uploads/2020/03/Holidays-in-Malta-Logo-2020.png",
+      "branches": [
+        {
+          "location": "Malta Headquater",
+          "address": "9 Daniela Court, 197 Marina StreetPTA9041, Pietà, Malta",
+          "VAT": "MT25816110"
+        },
+        {
+          "location": "Cyprus Branch",
+          "address": "Nikou Kazantzaki, 112460, Nicosia, Cyprus",
+          "VAT": "CY60021011T"
+        }
+      ]
+    },
+    "reviews": {
+      "count": 2,
+      "list": [
+        {
+          "name": "Moenish",
+          "rating": 5,
+          "date": "2020-03-20",
+          "comment": "Very nice penthouse above the spar in short definitely recommended everything is according to the listing this home deserves a 5 star",
+          "location": "The Hague, NetherLands"
+        },
+        {
+          "name": "Gareth",
+          "rating": 3,
+          "date": "2020-03-20",
+          "comment": "The good - Mirko was great, super responsive and very helpful, quick to assist and respond where needed and generally just a nice guy. Location is good above supermarket,",
+          "location": "Australia"
+        }
+      ]
+    },
+    "bookPlatforms": [
+      {
+        "name": "airbnb",
+        "link": "https://www.airbnb.com.mt/rooms/977238073976767296?source_impression_id=p3_1709136913_cFvskEVWKOlKNzak"
+      },
+      {
+        "name": "tripadvisor",
+        "link": "https://www.tripadvisor.com/VacationRentalReview-g230073-d27422063-Luxury_Penthouse_with_Pool_and_Seaview_in_Ta_Xbiex_Malta-Ta_Xbiex_Island_of_Malta.html"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "kazi",
+    "licenseNumber": "APT-19604",
     "features": [
       { "name": "guest", "value": "6" },
       { "name": "bedrooms", "value": "3" },
@@ -16,6 +126,73 @@
       { "name": "Washer", "icon": "6" },
       { "name": "Air Conditioning", "icon": "3" }
     ],
-    "aboutInfo": "Experience Malta like never before in our unique 3-bedroom, 2-bathroom Penthouse in Ta' Xbiex. With stunning sea views overlooking Valletta, this spacious retreat offers the perfect getaway. A fully-equipped kitchen invites culinary adventures.The expansive terrace, complete with a BBQ, is ideal for al fresco dining while enjoying the breathtaking scenery.But the real highlight? Your own private pool, perfect for cooling off or soaking in the Mediterranean sun!"
+    "aboutInfo": "Experience Malta like never before in our unique 3-bedroom, 2-bathroom Penthouse in Ta' Xbiex. With stunning sea views overlooking Valletta, this spacious retreat offers the perfect getaway. A fully-equipped kitchen invites culinary adventures.The expansive terrace, complete with a BBQ, is ideal for al fresco dining while enjoying the breathtaking scenery.But the real highlight? Your own private pool, perfect for cooling off or soaking in the Mediterranean sun!",
+    "weArehere": "",
+    "agentInfo": [
+      {
+        "name": "mirko",
+        "number": "+356 99303141",
+        "email": "mirko@holidaysinmalta.eu",
+        "whatsappNumber": "+356 99303141"
+      }
+    ],
+
+    "imagesArray": [
+      {
+        "src": "https://picsum.photos/600/400?grayscale",
+        "alt": ""
+      },
+      {
+        "src": "https://picsum.photos/600/400?grayscale",
+        "alt": ""
+      },
+      {
+        "src": "https://picsum.photos/600/400?grayscale",
+        "alt": ""
+      },
+      {
+        "src": "https://picsum.photos/600/400?grayscale",
+        "alt": ""
+      },
+      {
+        "src": "https://picsum.photos/600/400?grayscale",
+        "alt": ""
+      }
+    ],
+    "companyInfo": {
+      "name": "Karma Real Estates LTD",
+      "logo": "https://holidaysinmalta.eu/wp-content/uploads/2020/03/Holidays-in-Malta-Logo-2020.png",
+      "branches": [
+        {
+          "location": "Malta Headquater",
+          "address": "9 Daniela Court, 197 Marina StreetPTA9041, Pietà, Malta",
+          "VAT": "MT25816110"
+        },
+        {
+          "location": "Cyprus Branch",
+          "address": "Nikou Kazantzaki, 112460, Nicosia, Cyprus",
+          "VAT": "CY60021011T"
+        }
+      ]
+    },
+    "reviews": {
+      "count": 2,
+      "list": [
+        {
+          "name": "Moenish",
+          "rating": 5,
+          "date": "2020-03-20",
+          "comment": "Very nice penthouse above the spar in short definitely recommended everything is according to the listing this home deserves a 5 star",
+          "location": "The Hague, NetherLands"
+        },
+        {
+          "name": "Gareth",
+          "rating": 3,
+          "date": "2020-03-20",
+          "comment": "The good - Mirko was great, super responsive and very helpful, quick to assist and respond where needed and generally just a nice guy. Location is good above supermarket,",
+          "location": "Australia"
+        }
+      ]
+    }
   }
 ]

@@ -16,14 +16,27 @@ export default {
       center: true,
 
       // or have default horizontal padding
-      padding: "1rem",
+      padding: "15px",
 
       // default breakpoints but with 40px removed
-      screens: {
-        "2xl": "1400px",
-      },
+      // screens: {
+      //   "2xl": "1320px",
+      //   xl: "1140px",
+      //   lg: "960px",
+      //   md: "728px",
+      //   sm: "546px",
+      //   xs: "400px",
+      // },
     },
     extend: {
+      screens: {
+        "2xl": "1400px",
+        xl: "1200px",
+        lg: "992px",
+        md: "768px",
+        sm: "576px",
+        xs: "475px",
+      },
       colors: {
         "primary-300": "#FFF7EA",
         "primary-400": "#FFEACB",

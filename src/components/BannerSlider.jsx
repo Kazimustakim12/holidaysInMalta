@@ -8,50 +8,12 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 
-const Slider = () => {
-  const ImagesArray = [
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-  ];
+const BannerSlider = ({ imagesArray = [] }) => {
   return (
     <>
       <div className="bg-primary-400 bg-[url('./assets/bg-valleta.svg')] bg-contain bg-no-repeat bg-contain bg-bottom bg-transparent">
-        <div className="container ">
-          <div className="h-56 sm:h-64 xl:h-80 2xl:h-[600px]">
+        <div className="container">
+          <div className="h-[400px] sm:h-[450px] xl:h-80 2xl:h-[600px]">
             <Swiper
               autoplay={{
                 delay: 3000,
@@ -62,15 +24,25 @@ const Slider = () => {
                 rows: 2,
               }}
               breakpoints={{
-                640: {
-                  slidesPerView: 2,
+                320: {
+                  slidesPerView: 1,
                   spaceBetween: 10,
+                  pagination: {
+                    dynamicBullets: true,
+                    enabled: true,
+                  },
+                  grid: {
+                    rows: 1,
+                  },
                 },
-                768: {
-                  slidesPerView: 2,
+                767: {
+                  slidesPerView: 1,
                   spaceBetween: 10,
+                  grid: {
+                    rows: 1,
+                  },
                 },
-                1024: {
+                992: {
                   slidesPerView: 2,
                   spaceBetween: 10,
                   pagination: false,
@@ -84,7 +56,7 @@ const Slider = () => {
               modules={[Autoplay, Grid, Pagination, Navigation]}
               className="mySwiper"
             >
-              {ImagesArray.map((image, index) => (
+              {imagesArray.map((image, index) => (
                 <SwiperSlide key={index}>
                   <img
                     className="h-full w-full object-cover rounded-3xl"
@@ -102,4 +74,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default BannerSlider;
