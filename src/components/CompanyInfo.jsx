@@ -1,4 +1,6 @@
-const CompanyInfo = () => {
+import PropsTypes from "prop-types";
+
+const CompanyInfo = ({ compnayInfo }) => {
   return (
     <>
       <div className="p-4">
@@ -7,27 +9,27 @@ const CompanyInfo = () => {
             Company
           </span>
           <h2 className="text-white text-2xl font-semibold leading-[normal] mb-3">
-            Karma Real Estates LTD
+            {compnayInfo.name}
           </h2>
         </div>
         <div>
           <ul className="flex flex-col gap-2">
-            <li className="p-2.5 border border-secondary-400 rounded-xl">
-              <p className="text-sm font-normal leading-[normal] font-blinker text-[#5a7d64]">
-                <strong>Malta Headquater: </strong>
-                <br />
-                9 Daniela Court, 197 Marina StreetPTA9041, Pietà, Malta <br />
-                <strong>VAT:</strong> MT25816110
-              </p>
-            </li>
-            <li className="p-2.5 border border-secondary-400 rounded-xl">
-              <p className="text-sm font-normal leading-[normal] font-blinker text-[#5a7d64]">
-                <strong>Malta Headquater: </strong>
-                <br />
-                9 Daniela Court, 197 Marina StreetPTA9041, Pietà, Malta <br />
-                <strong>VAT:</strong> MT25816110
-              </p>
-            </li>
+            {compnayInfo.branches.map((item, index) => {
+              return (
+                <li
+                  key={item.location + index}
+                  className="p-2.5 border border-secondary-400 rounded-xl"
+                >
+                  <p className="text-sm font-normal leading-[normal] font-blinker text-[#5a7d64]">
+                    <strong>{item.location}</strong>
+                    <br />
+                    {item.address}
+                    <br />
+                    <strong>VAT:</strong> {item.VAT}
+                  </p>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
@@ -36,3 +38,20 @@ const CompanyInfo = () => {
 };
 
 export default CompanyInfo;
+CompanyInfo.propTypes = {
+  compnayInfo: PropsTypes.shape([
+    PropsTypes.shape({
+      name: PropsTypes.string.isRequired,
+      logo: PropsTypes.string.isRequired,
+      branches: PropsTypes.arrayOf(
+        PropsTypes.shape({
+          location: PropsTypes.string.isRequired,
+          address: PropsTypes.string.isRequired,
+          phone: PropsTypes.string.isRequired,
+          email: PropsTypes.string.isRequired,
+          VAT: PropsTypes.string.isRequired,
+        })
+      ),
+    }),
+  ]),
+};

@@ -11,7 +11,8 @@ export const ReadMore = ({ text, maxLength }) => {
     <div>
       {isTruncated ? (
         <p className="text-gray-500 text-base">
-          {text?.slice(0, maxLength)}
+          {`${text?.slice(0, maxLength)}...`}
+          <br></br>
           <span
             onClick={toggleTruncate}
             className="text-primary-600 cursor-pointer"

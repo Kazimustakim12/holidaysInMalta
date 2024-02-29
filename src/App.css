@@ -44,3 +44,9 @@
 .swiper-pagination-bullet-active {
   background: #ff5c00;
 }
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 45px;
+}

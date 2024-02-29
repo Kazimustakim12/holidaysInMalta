@@ -3,16 +3,15 @@ import PropTypes from "prop-types";
 
 import { Modal } from "flowbite-react";
 import { Button, Dropdown } from "flowbite-react";
-import {
-  AirbnbIcon,
-  LeftSideArrowIcon,
-  MapPinIcon,
-  RightSideArrowIcon,
-  TripAdvisor,
-} from "./IconSvg";
+import { LeftSideArrowIcon, MapPinIcon, RightSideArrowIcon } from "./IconSvg";
 import { getIconComponentByName } from "../utils/icons-map";
 
-const FloatContainer = ({ currentData, prevDataFn, nextDataFn }) => {
+const FloatContainer = ({
+  currentData,
+  prevDataFn,
+  nextDataFn,
+  preNextBtnDisable,
+}) => {
   const [offerModal, setOfferModal] = useState(false);
   const {
     title,
@@ -34,6 +33,7 @@ const FloatContainer = ({ currentData, prevDataFn, nextDataFn }) => {
                 alt="prev-image"
               />
               <Button
+                disabled={preNextBtnDisable}
                 onClick={prevDataFn}
                 className="rounded-l-[50px] rounded-r-[10px] flex items-center justify-center sm:px-2 sm:py-2  hover:border-secondary-500 hover:border bg-secondary-500 hover:text-secondary-400  hover:bg-secondary-600 enabled:hover:bg-secondary-600 absolute sm:left-[-25px] -left-2.5 focus:ring-secondary-400"
               >
@@ -50,7 +50,7 @@ const FloatContainer = ({ currentData, prevDataFn, nextDataFn }) => {
             <div className="flex flex-col item-center gap-2 xl:flex-row lg:flex-col md:flex-col sm:flex-col xs:flex-col">
               <div className="w-full xl:w-2/3 lg:w-full flex   gap-1 ">
                 <div>
-                  <MapPinIcon className="w-8" />
+                  <MapPinIcon className="w-8 text-primary-600" />
                 </div>
                 <div className="w-full">
                   <h3 className="text-black text-2xl sm:text-3xl font-bold">
@@ -69,7 +69,7 @@ const FloatContainer = ({ currentData, prevDataFn, nextDataFn }) => {
                         >
                           {getIconComponentByName(
                             item.icon,
-                            "fill-primary-600"
+                            "text-primary-600"
                           )}
                           <span></span>
                           <span className="text-slate-500 text-lg">
@@ -100,28 +100,22 @@ const FloatContainer = ({ currentData, prevDataFn, nextDataFn }) => {
                     </Button>
                   )}
                 >
-                  {bookPlatforms.map(() => {})}
-                  <Dropdown.Item
-                    onClick={() => alert("Dashboard!")}
-                    className="px-5 py-2 border border-primary-600 rounded-3xl hover:bg-primary-300 text-lg font-bold text-primary-600"
-                  >
-                    <AirbnbIcon className="fill-primary-600 mr-2 w-8" />
-                    Airbnb
-                  </Dropdown.Item>
-                  <Dropdown.Item
-                    onClick={() => alert("Dashboard!")}
-                    className="px-5 py-2 border border-primary-600 rounded-3xl hover:bg-primary-300 text-lg font-bold text-primary-600 mt-2"
-                  >
-                    <TripAdvisor className="fill-primary-600 mr-2 w-8" />
-                    TripAdvisor
-                  </Dropdown.Item>
+                  {bookPlatforms.map((items, index) => {
+                    return (
+                      <Dropdown.Item
+                        key={index + items.name}
+                        onClick={() => window.open(items.link, "_blank")}
+                        className="px-5 capitalize py-2 border my-1 border-primary-600 rounded-3xl hover:bg-primary-300 text-lg font-bold text-primary-600"
+                      >
+                        {getIconComponentByName(
+                          items.name,
+                          "text-primary-600 mr-2 w-8"
+                        )}
+                        {items.name}
+                      </Dropdown.Item>
+                    );
+                  })}
                 </Dropdown>
-                {/* <Button
-                  pill
-                  className="w-full p-3 bg-primary-600 hover:bg-primary-500 enabled:hover:bg-primary-500 enabled:hover:text-primary-600 text-2xl"
-                >
-                  
-                </Button> */}
               </div>
             </div>
             <div className="border-solid border-t border-slate-200 mt-2 py-4">
@@ -130,25 +124,23 @@ const FloatContainer = ({ currentData, prevDataFn, nextDataFn }) => {
                   This place offers:
                 </span>
                 <ul className="flex gap-2 items-center flex-wrap">
-                  {offers?.available?.slice(0, 5).map((item, index) => {
+                  {offers?.available?.slice(0, 6).map((item, index) => {
                     return (
                       <li
                         key={item.name + index}
-                        className="border border-solid text-sm border-light-gray-100 py-2 px-2 flex justify-between text-black rounded-md  text-sm"
+                        className="border border-solid text-sm border-light-gray-100 py-2 px-2 flex justify-between text-black rounded-md "
                       >
-                        <img
-                          src="/assets/cbi_kitchen-alt.svg"
-                          className="w-6 h-6 mr-2"
-                          alt="kitchen-icon"
-                        />
-                        kitchen
+                        {getIconComponentByName(
+                          item.icon,
+                          "text-secondary-500 mr-1"
+                        )}
+                        {item.name}
                       </li>
                     );
                   })}
-
                   <li
                     onClick={() => setOfferModal(true)}
-                    className="border border-solid text-sm border-primary-600 py-2 px-3 flex justify-between text-black rounded-md text-sm"
+                    className="border border-solid text-sm border-primary-600 py-2 px-3 flex justify-between text-black rounded-md "
                   >
                     {`See All >`}
                   </li>
@@ -167,54 +159,41 @@ const FloatContainer = ({ currentData, prevDataFn, nextDataFn }) => {
                           This Place Offers:
                         </p>
                         <ul className="flex gap-2 items-center flex-wrap">
-                          <li className="border border-solid text-sm border-light-gray-100 py-2 px-2 flex justify-between text-black rounded-md  text-sm">
-                            <img
-                              src="/assets/cbi_kitchen-alt.svg"
-                              className="w-6 h-6 mr-2"
-                              alt="kitchen-icon"
-                            />
-                            kitchen
-                          </li>
-                          <li className="border border-solid text-sm border-light-gray-100 py-2 px-2 flex justify-between text-black rounded-md text-sm">
-                            <img
-                              src="/assets/streamline_wifi.svg"
-                              className="w-6 h-6 mr-2"
-                              alt="kitchen-icon"
-                            />
-                            wifi
-                          </li>
-                          <li className="border border-solid text-sm border-light-gray-100 py-2 px-2 flex justify-between text-black rounded-md text-sm">
-                            <img
-                              src="/assets/mingcute_swimming-pool-line.svg"
-                              className="w-6 h-6 mr-2"
-                              alt="kitchen-icon"
-                            />
-                            Pool
-                          </li>
-                          <li className="border border-solid text-sm border-light-gray-100 py-2 px-2 flex justify-between text-black rounded-md text-sm">
-                            <img
-                              src="/assets/cbi_kitchen-alt.svg"
-                              className="w-6 h-6 mr-2"
-                              alt="kitchen-icon"
-                            />
-                            TV
-                          </li>
-                          <li className="border border-solid text-sm border-light-gray-100 py-2 px-2 flex justify-between text-black rounded-md text-sm">
-                            <img
-                              src="/assets/fluent_washer-32-regular.svg "
-                              className="w-6 h-6 mr-2"
-                              alt="kitchen-icon"
-                            />
-                            Washer
-                          </li>
-                          <li className="border border-solid text-sm border-light-gray-100 py-2 px-2 flex justify-between text-black rounded-md text-sm">
-                            <img
-                              src="/assets/tabler_air-conditioning.svg"
-                              className="w-6 h-6 mr-2"
-                              alt="kitchen-icon"
-                            />
-                            Air conditioning
-                          </li>
+                          {offers?.available?.map((item, index) => {
+                            return (
+                              <li
+                                key={item.name + index}
+                                className="border border-solid text-sm border-light-gray-100 py-2 px-2 flex justify-between text-black rounded-md "
+                              >
+                                {getIconComponentByName(
+                                  item.icon,
+                                  "text-secondary-500 mr-1"
+                                )}
+                                {item.name}
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                      <div className="mt-3">
+                        <p className="mb-2 font-semibold text-xl">
+                          No available:
+                        </p>
+                        <ul className="flex gap-2 items-center flex-wrap">
+                          {offers?.notAvailable?.map((item, index) => {
+                            return (
+                              <li
+                                key={item.name + index}
+                                className="border border-solid text-sm border-light-gray-100 py-2 px-2 flex justify-between text-black rounded-md "
+                              >
+                                {getIconComponentByName(
+                                  item.icon,
+                                  "text-light-gray-200 mr-1"
+                                )}
+                                {item.name}
+                              </li>
+                            );
+                          })}
                         </ul>
                       </div>
                     </Modal.Body>
@@ -231,6 +210,7 @@ const FloatContainer = ({ currentData, prevDataFn, nextDataFn }) => {
                 alt="prev-image"
               />
               <Button
+                disabled={preNextBtnDisable}
                 onClick={nextDataFn}
                 className="rounded-r-[50px] rounded-l-[10px] flex items-center justify-center focus:ring-primary-600 sm:px-2 sm:py-2 hover:border hover:border-primary-600 hover:text-primary-600 bg-primary-600 hover:bg-primary-500 enabled:hover:bg-primary-500 absolute sm:right-[-25px] -right-2.5"
               >
@@ -268,12 +248,10 @@ FloatContainer.propTypes = {
       })
     ).isRequired,
     licenseNumber: PropTypes.string.isRequired,
-    offers: PropTypes.arrayOf(
-      PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        value: PropTypes.string.isRequired,
-      })
-    ).isRequired,
+    offers: PropTypes.shape({
+      available: PropTypes.arrayOf(PropTypes.shape({}).isRequired),
+      notAvailable: PropTypes.arrayOf(PropTypes.shape({}).isRequired),
+    }).isRequired,
     imagesArray: PropTypes.arrayOf(
       PropTypes.shape({
         src: PropTypes.string.isRequired,
@@ -283,4 +261,5 @@ FloatContainer.propTypes = {
   }).isRequired,
   prevDataFn: PropTypes.func.isRequired,
   nextDataFn: PropTypes.func.isRequired,
+  preNextBtnDisable: PropTypes.bool,
 };

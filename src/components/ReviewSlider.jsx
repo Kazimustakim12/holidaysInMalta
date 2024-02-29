@@ -9,46 +9,10 @@ import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import { StarRate } from "./ReviewStart";
 import { ReadMore } from "./ReadMoreTruncate";
+import PropsTypes from "prop-types";
+import { convertDateToDays } from "../utils/dataToDays";
 
-const ReviewSlider = () => {
-  const ImagesArray = [
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-    {
-      src: "https://dummyimage.com/600x400/000/fff",
-      alt: "",
-    },
-  ];
+const ReviewSlider = ({ reviewList }) => {
   return (
     <>
       <div>
@@ -97,46 +61,45 @@ const ReviewSlider = () => {
             modules={[Autoplay, Grid, Pagination, Navigation]}
             // className="mySwiper"
           >
-            {ImagesArray.map((image, index) => (
-              <SwiperSlide key={index}>
-                <div className="p-6 rounded-3xl bg-white h-full ">
-                  <div className="flex items-center">
-                    <div className="w-14 h-14 rounded-full overflow-hidden">
-                      <img
-                        src="/assets/review-user-1.webp"
-                        alt="user-img"
-                        className="w-full object-cover h-full"
-                      />
+            {reviewList.list.map((item, index) => {
+              return (
+                <SwiperSlide key={index + item.id}>
+                  <div className="p-6 rounded-3xl bg-white h-full ">
+                    <div className="flex items-center">
+                      <div className="w-14 h-14 rounded-full overflow-hidden">
+                        <img
+                          src="/assets/review-user-1.webp"
+                          alt="user-img"
+                          className="w-full object-cover h-full"
+                        />
+                      </div>
+                      <div className="ml-4">
+                        <h3 className="text-base text-black font-semibold">
+                          {item.user.name}
+                        </h3>
+                        <p className="text-base text-gray-700 font-normal">
+                          {item.location}
+                        </p>
+                      </div>
                     </div>
-                    <div className="ml-4">
-                      <h3 className="text-base text-black font-semibold">
-                        Moneish
-                      </h3>
-                      <p className="text-base text-gray-700 font-normal">
-                        The Hague, Netherland
-                      </p>
+                    <div className="flex  items-center mt-4">
+                      <StarRate totalStars={3} />
+                      <div className="ml-2">
+                        <p className="text-xs text-gray-700 font-normal">
+                          {convertDateToDays(item.date)}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="mt-3">
+                      <ReadMore text={item.comment} maxLength={250} />
                     </div>
                   </div>
-                  <div className="flex  items-center mt-4">
-                    <StarRate totalStars={3} />
-                    <div className="ml-2">
-                      <p className="text-xs text-gray-700 font-normal">
-                        4 days ago - stay a few nights
-                      </p>
-                    </div>
-                  </div>
-                  <div className="mt-3">
-                    <ReadMore
-                      text={`The good - Mirko was great, super responsive and very
-                      helpful, quick to assist and respond where needed and
-                      generally just a nice guy. Location is good above
-                      supermarket, great view`}
-                      maxLength={150}
-                    />
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                </SwiperSlide>
+              );
+            })}
+            {/* {ImagesArray.map((image, index) => (
+              
+            ))} */}
           </Swiper>
         </div>
       </div>
@@ -145,3 +108,21 @@ const ReviewSlider = () => {
 };
 
 export default ReviewSlider;
+
+ReviewSlider.propTypes = {
+  reviewList: PropsTypes.shape({
+    count: PropsTypes.number,
+    list: PropsTypes.arrayOf(
+      PropsTypes.shape({
+        id: PropsTypes.number,
+        user: PropsTypes.shape({
+          name: PropsTypes.string.isRequired,
+        }),
+        rating: PropsTypes.number,
+        comment: PropsTypes.string,
+        createdAt: PropsTypes.string,
+        location: PropsTypes.string,
+      })
+    ),
+  }),
+};

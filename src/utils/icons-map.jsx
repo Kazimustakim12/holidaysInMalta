@@ -4,10 +4,13 @@ import * as SvgIconsComponent from "../components/IconSvg";
  * Icons Component map.
  *
  * @param {string} name Icon Name.
+ * @param {string} fillColor Icon Fill color name.
+ * @param {string} strokeColor Icon Stroke color name.
+ *
+ *
  * @returns {*}
  */
 export const getIconComponentByName = (name, className) => {
-  console.log(SvgIconsComponent.UserIcon);
   const ComponentsMap = {
     airbnb: SvgIconsComponent.AirbnbIcon,
     tripadvisor: SvgIconsComponent.TripAdvisor,
