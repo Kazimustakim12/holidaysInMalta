@@ -6,9 +6,6 @@ import Blog from "./pages/Blog";
 function App() {
   return (
     <>
-      {/* <Layout>
-        <Home />
-      </Layout> */}
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />}></Route>

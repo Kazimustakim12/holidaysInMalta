@@ -13,11 +13,24 @@ const Home = () => {
   const [currentData, setCurrentData] = useState(null);
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [preNextBtnDisable, setpreNextBtnDisable] = useState(false);
+  const [nextBtnDisable, setnextBtnDisable] = useState(false);
+  const [preBtnDisable, setpreBtnDisable] = useState(false);
+
+  const prevDataFn = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+  const nextDataFn = () => {
+    if (currentIndex < data.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
 
   useEffect(() => {
     setLoading(true);
-    setpreNextBtnDisable(currentIndex <= 0 ? true : false);
+    setpreBtnDisable(currentIndex === 0);
+    setnextBtnDisable(currentIndex === data.length - 1);
     setTimeout(() => {
       setLoading(false);
     }, 2000);
@@ -29,23 +42,7 @@ const Home = () => {
     };
     fetchDataInternal();
   }, [currentIndex]);
-  console.log(
-    preNextBtnDisable,
-    "preNextBtnDisable",
-    "currentIndex",
-    currentIndex
-  );
-  const prevDataFn = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  };
-  const nextDataFn = () => {
-    if (currentIndex < data.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
-  console.log(loading, "outside");
+
   return (
     <>
       {loading || currentData === null ? (
@@ -55,12 +52,7 @@ const Home = () => {
               <BannerSlider loading />
             </div>
             <div className="container relative mt-[-40px] lg:mt-[-80px] z-10">
-              {/* <FloatContainer
-              prevDataFn={prevDataFn}
-              nextDataFn={nextDataFn}
-              currentData={currentData && currentData}
-              preNextBtnDisable={preNextBtnDisable}
-            /> */}
+              <FloatContainer loading />
             </div>
             <div className="container mt-6">
               <div className="flex gap-6 lg:flex-nowrap flex-wrap">
@@ -76,9 +68,6 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="container">
-              {/* <ReviewSlider reviewList={currentData?.reviews} /> */}
-            </div>
           </main>
         </>
       ) : (
@@ -91,7 +80,8 @@ const Home = () => {
               prevDataFn={prevDataFn}
               nextDataFn={nextDataFn}
               currentData={currentData && currentData}
-              preNextBtnDisable={preNextBtnDisable}
+              preBtnDisable={preBtnDisable}
+              nextBtnDisable={nextBtnDisable}
             />
           </div>
           <div className="container mt-6">

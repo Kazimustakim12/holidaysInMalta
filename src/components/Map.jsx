@@ -1,7 +1,6 @@
 import PropsTypes from "prop-types";
 
 const Map = ({ mapUrl, loading }) => {
-  console.log(loading, "map ");
   return (
     <>
       {loading && (

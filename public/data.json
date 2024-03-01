@@ -93,7 +93,7 @@
     },
     "aboutInfo": {
       "text": "Escape to the unparalleled beauty of Malta with our exclusive 3-bedroom, 2-bathroom Penthouse in the charming area of Ta Xbiex. Indulge in a mesmerizing panorama of the sea, embracing the majestic  silhouette of Valletta, right from your windows. <br /> <br /> Step into a realm of luxury and comfort where every detail is crafted for your utmost satisfaction. Our spacious retreat boasts a fully-equipped kitchen, beckoning culinary enthusiasts to unleash their creativity. <br /> <br /> TElevating your experience is our expansive terrace, adorned with a BBQ, offering the perfect setting for memorable al fresco dining moments amidst awe-inspiring vistas. <br /> <br /> Yet, the pièce de résistance lies just beyond – your very own private pool, a sanctuary of serenity and indulgence, inviting you to immerse yourself in its refreshing waters or bask in the warm embrace of the Mediterranean sun. <br /> <br /> Embark on an unforgettable journey and make memories that linger long after you depart. Your dream escape awaits.",
-      "aboutImage": "https://picsum.photos/600/600"
+      "aboutImage": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-4-min.jpg"
     },
     "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.9529854538546!2d14.489707610805429!3d35.89916711785774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e45a49ce5ad83%3A0x5eac66d2130058ee!2sPenthouse%20Holidays%20in%20Malta!5e0!3m2!1sen!2smt!4v1708685630455!5m2!1sen!2smt",
     "agentInfo": [
@@ -107,206 +107,108 @@
     ],
     "imagesArray": [
       {
-        "src": "https://picsum.photos/600/400",
-        "alt": ""
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-4-min.jpg",
+        "alt": "property-1"
       },
       {
-        "src": "https://picsum.photos/600/400",
-        "alt": ""
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-5-min.jpg",
+        "alt": "property-2"
       },
       {
-        "src": "https://picsum.photos/600/400",
-        "alt": ""
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-6-min.jpg",
+        "alt": "property-3"
       },
       {
-        "src": "https://picsum.photos/600/400",
-        "alt": ""
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-7-min.jpg",
+        "alt": "property-4"
       },
       {
-        "src": "https://picsum.photos/600/400",
-        "alt": ""
-      }
-    ],
-    "companyInfo": {
-      "name": "Karma Real Estates LTD",
-      "logo": "https://holidaysinmalta.eu/wp-content/uploads/2020/03/Holidays-in-Malta-Logo-2020.png",
-      "branches": [
-        {
-          "location": "Malta Headquater",
-          "address": "9 Daniela Court, 197 Marina StreetPTA9041, Pietà, Malta",
-          "VAT": "MT25816110"
-        },
-        {
-          "location": "Cyprus Branch",
-          "address": "Nikou Kazantzaki, 112460, Nicosia, Cyprus",
-          "VAT": "CY60021011T"
-        }
-      ]
-    },
-    "reviews": {
-      "count": 2,
-      "list": [
-        {
-          "id": 1,
-          "user": {
-            "img": "",
-            "name": "Moenish"
-          },
-          "rating": 5,
-          "date": "2/26/2024",
-          "comment": "Very nice penthouse above the spar in short definitely recommended everything is according to the listing this home deserves a 5 star",
-          "location": "The Hague, NetherLands"
-        },
-        {
-          "id": 2,
-          "user": {
-            "img": "",
-            "name": "Gareth"
-          },
-          "rating": 3,
-          "date": "2/29/2024",
-          "comment": "The bad - Unfortunately the apartment was not great ,it was the first ever listing and it wasn’t quite ready I think, themaster bedroom had a constant mouldy smell and couldn’t beused/slept in. Clothes Washing machine didn’t work, the mainbathroom flooded when I tried to use the shower as the drain wasblocked. No usable blankets as the ones in the cupboard all had themouldy smell, missing some basic items in kitchen such as bigchopping knife (had only paring knives) etc nothing major butfrustrating. When advised of an issue Mirko was straight ontothings, so can’t fault the host at all. But for the money I paid itwas a bit disappointing to have all these various issues crop upduring my stay. Hopefully they get it fixed up properly before thenext listing as the place has potential.",
-          "location": "Australia"
-        }
-      ]
-    },
-    "bookPlatforms": [
-      {
-        "name": "airbnb",
-        "link": "https://www.airbnb.com.mt/rooms/977238073976767296?source_impression_id=p3_1709136913_cFvskEVWKOlKNzak"
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-17-min.jpg",
+        "alt": "property-5"
       },
       {
-        "name": "tripadvisor",
-        "link": "https://www.tripadvisor.com/VacationRentalReview-g230073-d27422063-Luxury_Penthouse_with_Pool_and_Seaview_in_Ta_Xbiex_Malta-Ta_Xbiex_Island_of_Malta.html"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "title": "2",
-    "licenseNumber": "APT-27101",
-    "features": [
-      {
-        "name": "guest",
-        "value": "6",
-        "icon": "guest"
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-16-min.jpg",
+        "alt": "property-6"
       },
       {
-        "name": "bedrooms",
-        "value": "3",
-        "icon": "bedroom"
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-14-min.jpg",
+        "alt": "property-7"
       },
       {
-        "name": "beds",
-        "value": "4",
-        "icon": "bed"
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-12-min.jpg",
+        "alt": "property-8"
       },
       {
-        "name": "baths",
-        "value": "2",
-        "icon": "bathroom"
-      }
-    ],
-    "offers": {
-      "available": [
-        {
-          "name": "Kitchen",
-          "icon": "kitchen"
-        },
-        {
-          "name": "Wifi",
-          "icon": "wifi"
-        },
-        {
-          "name": "Pool",
-          "icon": "pool"
-        },
-        {
-          "name": "TV",
-          "icon": "tv"
-        },
-        {
-          "name": "Washer",
-          "icon": "washer"
-        },
-        {
-          "name": "Air Conditioning",
-          "icon": "airCondition"
-        },
-        {
-          "name": "Security cameras on poperty",
-          "icon": "cctv"
-        },
-        {
-          "name": "BBQ gril",
-          "icon": "bbq"
-        },
-        {
-          "name": "Smoke alaram",
-          "icon": "smokeAlarm"
-        },
-        {
-          "name": "Outdoor dining area",
-          "icon": "dining"
-        }
-      ],
-      "notAvailable": [
-        {
-          "name": "Dryer",
-          "icon": "dryer"
-        },
-        {
-          "name": "Essentials",
-          "icon": "essentials"
-        },
-        {
-          "name": "Hot Water",
-          "icon": "water"
-        },
-        {
-          "name": "Carbon monoxide alarm",
-          "icon": "monoAlarm"
-        },
-        {
-          "name": "Heating",
-          "icon": "heating"
-        }
-      ]
-    },
-    "aboutInfo": {
-      "text": "Escape to the unparalleled beauty of Malta with our exclusive 3-bedroom, 2-bathroom Penthouse in the charming area of Ta Xbiex. Indulge in a mesmerizing panorama of the sea, embracing the majestic  silhouette of Valletta, right from your windows. <br /> <br /> Step into a realm of luxury and comfort where every detail is crafted for your utmost satisfaction. Our spacious retreat boasts a fully-equipped kitchen, beckoning culinary enthusiasts to unleash their creativity. <br /> <br /> TElevating your experience is our expansive terrace, adorned with a BBQ, offering the perfect setting for memorable al fresco dining moments amidst awe-inspiring vistas. <br /> <br /> Yet, the pièce de résistance lies just beyond – your very own private pool, a sanctuary of serenity and indulgence, inviting you to immerse yourself in its refreshing waters or bask in the warm embrace of the Mediterranean sun. <br /> <br /> Embark on an unforgettable journey and make memories that linger long after you depart. Your dream escape awaits.",
-      "aboutImage": "https://picsum.photos/600/600"
-    },
-    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.9529854538546!2d14.489707610805429!3d35.89916711785774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e45a49ce5ad83%3A0x5eac66d2130058ee!2sPenthouse%20Holidays%20in%20Malta!5e0!3m2!1sen!2smt!4v1708685630455!5m2!1sen!2smt",
-    "agentInfo": [
-      {
-        "avatar": "url",
-        "name": "mirko",
-        "number": "+356 99303141",
-        "email": "mirko@holidaysinmalta.eu",
-        "whatsappNumber": "35699303141"
-      }
-    ],
-    "imagesArray": [
-      {
-        "src": "https://picsum.photos/600/400",
-        "alt": ""
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-11-min.jpg",
+        "alt": "property-9"
       },
       {
-        "src": "https://picsum.photos/600/400",
-        "alt": ""
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-10-min.jpg",
+        "alt": "property-9"
       },
       {
-        "src": "https://picsum.photos/600/400",
-        "alt": ""
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-9-min.jpg",
+        "alt": "property-9"
       },
       {
-        "src": "https://picsum.photos/600/400",
-        "alt": ""
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-8-min.jpg",
+        "alt": "property-9"
       },
       {
-        "src": "https://picsum.photos/600/400",
-        "alt": ""
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-3-min.jpg",
+        "alt": "property-9"
+      },
+      {
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-2-min.jpg",
+        "alt": "property-9"
+      },
+      {
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-1-min.jpg",
+        "alt": "property-9"
+      },
+      {
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-30-min.jpg",
+        "alt": "property-9"
+      },
+      {
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-29-min.jpg",
+        "alt": "property-9"
+      },
+      {
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-28-min.jpg",
+        "alt": "property-9"
+      },
+      {
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-27-min.jpg",
+        "alt": "property-9"
+      },
+      {
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-26-min.jpg",
+        "alt": "property-9"
+      },
+      {
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-25-min.jpg",
+        "alt": "property-9"
+      },
+      {
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-24-min.jpg",
+        "alt": "property-9"
+      },
+      {
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-23-min.jpg",
+        "alt": "property-9"
+      },
+      {
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-21-min.jpg",
+        "alt": "property-9"
+      },
+      {
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-19-min.jpg",
+        "alt": "property-9"
+      },
+      {
+        "src": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/Phse-18-min.jpg",
+        "alt": "property-9"
       }
     ],
     "companyInfo": {

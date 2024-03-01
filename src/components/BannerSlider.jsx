@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import PropsTypes from "prop-types";
+import { OpenBoxGallery } from "./OpenBoxGallery";
 
 const BannerSlider = ({ imagesArray = [], loading }) => {
   return (
@@ -68,14 +69,13 @@ const BannerSlider = ({ imagesArray = [], loading }) => {
                 <span className="sr-only">Loading...</span>
               </div>
             </div>
-            <div className="loadmore-btn "></div>
           </div>
         </div>
       )}
       {imagesArray && !loading && (
         <div className="bg-primary-400 bg-[url('./assets/bg-valleta.svg')] bg-contain bg-no-repeat  bg-bottom bg-transparent">
           <div className="container">
-            <div className="h-[400px] sm:h-[450px] xl:h-80 2xl:h-[600px]">
+            <div className="h-[400px] sm:h-[450px] xl:h-80 2xl:h-[600px] relative">
               <Swiper
                 autoplay={{
                   delay: 3000,
@@ -129,8 +129,10 @@ const BannerSlider = ({ imagesArray = [], loading }) => {
                   </SwiperSlide>
                 ))}
               </Swiper>
+              <div className="loadmore-btn absolute top-4 right-4">
+                <OpenBoxGallery imagesArray={imagesArray && imagesArray} />
+              </div>
             </div>
-            <div className="loadmore-btn "></div>
           </div>
         </div>
       )}

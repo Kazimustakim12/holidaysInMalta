@@ -724,3 +724,24 @@ export const WhatsApp = ({ className, ...props }) => {
     </svg>
   );
 };
+
+export const BoxMenuIcon = ({ className, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="22"
+      height="22"
+      viewBox="0 0 22 22"
+      fill="none"
+      className={className}
+      {...props}
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M14.0304 14.0305H17.5381V17.5381H14.0304V14.0305ZM8.76901 14.0305H12.2766V17.5381H8.76901V14.0305ZM3.50757 14.0305H7.01519V17.5381H3.50757V14.0305ZM14.0304 8.76905H17.5381V12.2767H14.0304V8.76905ZM8.76901 8.76905H12.2766V12.2767H8.76901V8.76905ZM3.50757 8.76905H7.01519V12.2767H3.50757V8.76905ZM14.0304 3.50761H17.5381V7.01524H14.0304V3.50761ZM8.76901 3.50761H12.2766V7.01524H8.76901V3.50761ZM3.50757 3.50761H7.01519V7.01524H3.50757V3.50761Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+};
