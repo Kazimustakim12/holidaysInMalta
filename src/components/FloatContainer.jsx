@@ -193,7 +193,7 @@ const FloatContainer = ({
                     })}
                     <li
                       onClick={() => setOfferModal(true)}
-                      className="border border-solid text-sm border-primary-600 py-2 px-3 flex justify-between text-black rounded-md "
+                      className="border border-solid text-sm border-primary-600 py-2 px-3 flex justify-between text-black rounded-md  cursor-pointer"
                     >
                       {`See All >`}
                     </li>

@@ -1,12 +1,14 @@
-import { useEffect, useState } from "react";
+import { lazy, useEffect, useState } from "react";
 import AboutSpace from "../components/AboutSpace";
 import AgentInfo from "../components/AgentInfo";
-import BannerSlider from "../components/BannerSlider";
+// import BannerSlider from "../components/BannerSlider";
 import CompanyInfo from "../components/CompanyInfo";
 import FloatContainer from "../components/FloatContainer";
 import Map from "../components/Map";
 import ReviewSlider from "../components/ReviewSlider";
 // import { Spinner } from "flowbite-react";
+
+const BannerSlider = lazy(() => import("../components/BannerSlider"));
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,8 +31,6 @@ const Home = () => {
 
   useEffect(() => {
     setLoading(true);
-    setpreBtnDisable(currentIndex === 0);
-    setnextBtnDisable(currentIndex === data.length - 1);
     setTimeout(() => {
       setLoading(false);
     }, 2000);
@@ -39,6 +39,10 @@ const Home = () => {
       const data = await response.json();
       setData(data);
       setCurrentData(data[currentIndex]);
+      setpreBtnDisable(currentIndex === 0);
+      setnextBtnDisable(
+        currentIndex === data.length - 1 || currentIndex === data.length
+      );
     };
     fetchDataInternal();
   }, [currentIndex]);
