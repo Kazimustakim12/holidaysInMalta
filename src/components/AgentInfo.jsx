@@ -39,7 +39,7 @@ const AgentInfo = ({ agentDetails, loading }) => {
             <div className="p-4 rounded-3xl bg-white " key={item.name + index}>
               <div className="flex items-center">
                 <div className="">
-                  <img src="/assets/slaeperson.png" alt="agent-img" />
+                  <img src={item.avatar} alt="agent-img" />
                 </div>
                 <div className="info ml-4">
                   <h3 className="text-primary-600 font-bold leading-[normal] text-2xl">

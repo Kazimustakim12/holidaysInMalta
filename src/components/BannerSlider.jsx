@@ -14,7 +14,7 @@ const BannerSlider = ({ imagesArray = [], loading }) => {
   return (
     <>
       {loading && (
-        <div className="bg-primary-400 bg-[url('./assets/bg-valleta.svg')] bg-cover bg-no-repeat  bg-bottom bg-transparent">
+        <div className="bg-primary-400 bg-[url('./assets/images/bg-valleta.svg')] bg-cover bg-no-repeat  bg-bottom bg-transparent">
           <div className="container">
             <div className="h-[220px] sm:h-[250px] xl:h-80 2xl:h-[500px]">
               <div
@@ -73,7 +73,7 @@ const BannerSlider = ({ imagesArray = [], loading }) => {
         </div>
       )}
       {imagesArray && !loading && (
-        <div className="bg-primary-400 bg-[url('./assets/bg-valleta.svg')] bg-contain bg-no-repeat  bg-bottom bg-transparent">
+        <div className="bg-primary-400 bg-[url('./assets/images/bg-valleta.svg')] bg-contain bg-no-repeat  bg-bottom bg-transparent">
           <div className="container">
             <div className="h-[400px] sm:h-[450px] xl:h-80 2xl:h-[600px] relative">
               <Swiper
