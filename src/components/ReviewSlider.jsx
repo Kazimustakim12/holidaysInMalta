@@ -71,6 +71,7 @@ const ReviewSlider = ({ reviewList }) => {
                           src="/assets/images/review-user-1.webp"
                           alt="user-img"
                           className="w-full object-cover h-full"
+                          loading="lazy"
                         />
                       </div>
                       <div className="ml-4">

@@ -78,7 +78,7 @@ const BlogDetails = ({ post, loading }) => {
                   href="author.html"
                   className="flex w-12 h-12 rounded-full overflow-hidden"
                 >
-                  <img src={userUrl} alt="user" />
+                  <img src={userUrl} alt="user" loading="lazy" />
                 </div>
                 <div>
                   <h4 className="capitalize font-medium text-custom-lg text-dark">
@@ -114,6 +114,7 @@ const BlogDetails = ({ post, loading }) => {
               src={featuredImage?.node?.sourceUrl}
               alt="blog"
               className="m-auto w-full rounded-3xl my-11 h-[420px] object-cover"
+              loading="lazy"
             />
           )}
 

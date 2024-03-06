@@ -2,11 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { Autoplay, Grid, Pagination, Navigation } from "swiper/modules";
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/grid";
-import "swiper/css/pagination";
-import "swiper/css/autoplay";
-import "swiper/css/navigation";
+
 import PropsTypes from "prop-types";
 import { OpenBoxGallery } from "./OpenBoxGallery";
 
@@ -125,6 +121,7 @@ const BannerSlider = ({ imagesArray = [], loading }) => {
                       className="h-full w-full object-cover rounded-3xl"
                       src={image.src}
                       alt={image.alt}
+                      loading="lazy"
                     />
                   </SwiperSlide>
                 ))}

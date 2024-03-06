@@ -92,6 +92,7 @@ const Blog = () => {
                           src={post?.featuredImage?.node?.sourceUrl}
                           className="rounded-2xl h-[380px] w-full object-cover  overflow-hidden  bg-gray-100 transition-all hover:scale-[1.02]"
                           alt=""
+                          loading="lazy"
                         />
                       </Link>
                     ) : (
@@ -120,7 +121,10 @@ const Blog = () => {
                     <div className="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400">
                       <div className="flex items-center gap-3">
                         <div className="relative h-5 w-5 flex-shrink-0 rounded-full overflow-hidden">
-                          <img src={post?.author?.node?.avatar?.url} />
+                          <img
+                            src={post?.author?.node?.avatar?.url}
+                            loading="lazy"
+                          />
                         </div>
                         <span className=" text-sm capitalize">
                           {post.author.node.name}

@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 const Header = () => {
   return (
     <>
-      <header className="py-6 bg-primary-400 bg-[url('./assets/images/bg_transparent.png')]  bg-no-repeat bg-blend-color-burn">
+      <header className="py-6 bg-primary-400 bg-[url('./assets/images/bg_transparent.webp')]  bg-no-repeat bg-blend-color-burn">
         <div className="container relative flex justify-between items-center mx-auto md:flex-nowrap flex-wrap">
           <Navbar />
           <Link
@@ -17,6 +17,7 @@ const Header = () => {
               src="/assets/images/logo.svg"
               alt="Logo"
               className="w-[70%] sm:w-[50%] md:w-[60%] lg:w-[80%]"
+              loading="lazy"
             />
           </Link>
           <div className=" lg:relative relative flex-wrap gap-1 items-center justify-center w-32 flex right-4 md:order-2 order-2">
@@ -25,6 +26,7 @@ const Header = () => {
                 src="/assets/images/maltatourismauthority.png"
                 alt="maltaTourism-logo"
                 className="w-24"
+                loading="lazy"
               />
             </a>
             <a

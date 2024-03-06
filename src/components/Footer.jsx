@@ -6,6 +6,7 @@ const Footer = () => {
           src="/assets/images/Malta.png"
           alt="malta text logo "
           className="w-1/2"
+          loading="lazy"
         />
       </div>
     </footer>

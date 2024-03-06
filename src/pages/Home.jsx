@@ -50,7 +50,7 @@ const Home = () => {
       {loading || currentData === null ? (
         <>
           <main>
-            <div className="bg-primary-400 bg-[url('./assets/images/bg_transparent.png')] bg-cover bg-no-repeat bg-blend-color-burn">
+            <div className="bg-primary-400 bg-[url('./assets/images/bg_transparent.webp')] bg-cover bg-no-repeat bg-blend-color-burn">
               <BannerSlider loading />
             </div>
             <div className="container relative mt-[-40px] lg:mt-[-80px] z-10">
@@ -74,7 +74,7 @@ const Home = () => {
         </>
       ) : (
         <main>
-          <div className="bg-primary-400 bg-[url('./assets/images/bg_transparent.png')] bg-cover bg-no-repeat bg-blend-color-burn">
+          <div className="bg-primary-400 bg-[url('./assets/images/bg_transparent.webp')] bg-cover bg-no-repeat bg-blend-color-burn">
             <Suspense fallback={<span>Loading....</span>}>
               <BannerSlider imagesArray={currentData?.imagesArray} />
             </Suspense>

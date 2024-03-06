@@ -1,16 +1,17 @@
 import Layout from "./components/Layout";
-// import Home from "./pages/Home";
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
-// import Blog from "./pages/Blog";
-// import BlogDetailPage from "./pages/BlogDetailPage";
 import React, { Suspense } from "react";
 import PageNotFound from "./pages/PageNotFound";
 import WebsiteLoader from "./components/Ui/WebsiteLoader";
-
 const Home = React.lazy(() => import("./pages/Home"));
 const Blog = React.lazy(() => import("./pages/Blog"));
 const BlogDetailPage = React.lazy(() => import("./pages/BlogDetailPage"));
+import "swiper/css";
+import "swiper/css/grid";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
+import "./App.css";
 
 function App() {
   return (

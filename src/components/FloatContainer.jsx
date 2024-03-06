@@ -84,6 +84,7 @@ const FloatContainer = ({
                   src={imagesArray[0].src}
                   className="border-white border-4 rounded-l-[50px] rounded-r-[10px]  w-full object-contain"
                   alt="prev-image"
+                  loading="lazy"
                 />
                 <Button
                   disabled={preBtnDisable}
@@ -259,6 +260,7 @@ const FloatContainer = ({
               <div className="relative flex items-center ">
                 <img
                   src={imagesArray[imagesArray.length - 1].src}
+                  loading="lazy"
                   className="border-white border-4 rounded-r-[50px] rounded-l-[10px]  w-full object-contain"
                   alt="prev-image"
                 />
