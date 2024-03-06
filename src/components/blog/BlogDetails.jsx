@@ -141,6 +141,20 @@ BlogDetails.propTypes = {
         sourceUrl: PropsTypes.string.isRequired,
       }),
     }),
+    categories: PropsTypes.shape({
+      nodes: PropsTypes.arrayOf(
+        PropsTypes.shape({
+          name: PropsTypes.string.isRequired,
+        })
+      ),
+    }),
+    tags: PropsTypes.shape({
+      nodes: PropsTypes.arrayOf(
+        PropsTypes.shape({
+          name: PropsTypes.string.isRequired,
+        })
+      ),
+    }),
     author: PropsTypes.shape({
       node: PropsTypes.shape({
         name: PropsTypes.string.isRequired,
