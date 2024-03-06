@@ -21,7 +21,7 @@ const Header = () => {
             {/* <div className=""></div> */}
           </Link>
           <div className=" lg:relative relative flex-wrap gap-1 items-center justify-center w-32 flex right-4 md:order-2 order-2">
-            <a href="https://www.mta.com.mt/en/home">
+            <a href="https://www.mta.com.mt/en/home" target="_blank">
               <img
                 src="/assets/maltatourismauthority.png"
                 alt="maltaTourism-logo"
@@ -31,6 +31,7 @@ const Header = () => {
             <a
               href="https://www.flickr.com/people/holidaysinmalta/"
               className="w-10 h-10 p-2 bg-white flex items-center justify-center rounded-md"
+              target="_blank"
             >
               {/* <FlickerIcon /> */}
               <ImFlickr2 className="fill-primary-600 w-5 h-5" />
@@ -38,6 +39,7 @@ const Header = () => {
             <a
               href="https://www.instagram.com/holidaysinmalta.eu"
               className="w-10 h-10 p-2 bg-white flex items-center justify-center rounded-md"
+              target="_blank"
             >
               {/* <InstagramIcon className="fill-primary-600" /> */}
               <GrInstagram className="fill-primary-600 w-5 h-5" />
@@ -45,6 +47,7 @@ const Header = () => {
             <a
               href="https://facebook.com/holidaysinmalta.eu"
               className="w-10 h-10 p-2 bg-white flex items-center justify-center rounded-md"
+              target="_blank"
             >
               {/* <FacebookIcon className="fill-primary-600" /> */}
               <GrFacebookOption className="fill-primary-600 w-5 h-5" />

@@ -6,6 +6,7 @@ import Blog from "./pages/Blog";
 import BlogDetailPage from "./pages/BlogDetailPage";
 import { Suspense } from "react";
 import { Spinner } from "flowbite-react";
+import PageNotFound from "./pages/PageNotFound";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
             <Route index element={<Home />}></Route>
             <Route path="/blog" element={<Blog />}></Route>
             <Route path="/blog/:slug" element={<BlogDetailPage />}></Route>
+            <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>
       </Suspense>
