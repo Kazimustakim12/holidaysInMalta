@@ -68,7 +68,7 @@ const ReviewSlider = ({ reviewList }) => {
                     <div className="flex items-center">
                       <div className="w-14 h-14 rounded-full overflow-hidden">
                         <img
-                          src="/assets/images/review-user-1.webp"
+                          src={item.user.img}
                           alt="user-img"
                           className="w-full object-cover h-full"
                           loading="lazy"

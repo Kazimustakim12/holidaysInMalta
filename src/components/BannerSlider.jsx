@@ -1,8 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-// import required modules
 import { Autoplay, Grid, Pagination, Navigation } from "swiper/modules";
-// Import Swiper styles
-
 import PropsTypes from "prop-types";
 import { OpenBoxGallery } from "./OpenBoxGallery";
 

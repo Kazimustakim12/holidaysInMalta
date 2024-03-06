@@ -233,7 +233,7 @@
         {
           "id": 1,
           "user": {
-            "img": "",
+            "img": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/review-user-1.webp",
             "name": "Moenish"
           },
           "rating": 5,
@@ -244,7 +244,7 @@
         {
           "id": 2,
           "user": {
-            "img": "",
+            "img": "https://wp.holidaysinmalta.eu/wp-content/uploads/2024/03/review-user-2.webp",
             "name": "Gareth"
           },
           "rating": 3,

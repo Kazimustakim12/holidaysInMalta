@@ -11,16 +11,16 @@ const Header = () => {
           <Navbar />
           <Link
             to="/"
-            className="m-auto flex lg:justify-start justify-center md:order-1 order-0 w-full md:w-auto mb-3"
+            className="m-auto flex lg:justify-start justify-center md:order-1 order-0 w-full md:w-auto md:mb-0 mb-3"
           >
             <img
               src="/assets/images/logo.svg"
               alt="Logo"
-              className="w-[70%] sm:w-[50%] md:w-[60%] lg:w-[80%]"
               loading="lazy"
+              className="w-[70%] sm:w-[50%] md:w-[60%] lg:w-[80%]"
             />
           </Link>
-          <div className=" lg:relative relative flex-wrap gap-1 items-center justify-center w-32 flex right-4 md:order-2 order-2">
+          <div className=" lg:relative  flex-wrap gap-1 items-center justify-center md:w-32 flex right-4 md:order-2 w-full order-1">
             <a href="https://www.mta.com.mt/en/home" target="_blank">
               <img
                 src="/assets/images/maltatourismauthority.png"

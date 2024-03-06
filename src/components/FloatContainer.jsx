@@ -138,7 +138,7 @@ const FloatContainer = ({
                     </ul>
                   </div>
                 </div>
-                <div className="xl:w-1/3 lg:w-full md:w-full sm:w-full xs:w-full ">
+                <div className="xl:w-1/3 lg:w-full md:w-full sm:w-[80%] xs:w-[80%] md:relative fixed md:bottom-auto bottom-8 right-0 left-0 m-auto z-50">
                   <Dropdown
                     className=" bg-white rounded-2xl p-3 enabled:hover:text-primary-600 xl:w-auto lg:w-full"
                     label="Book In"

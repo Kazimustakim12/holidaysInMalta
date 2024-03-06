@@ -96,7 +96,7 @@ const Blog = () => {
                         />
                       </Link>
                     ) : (
-                      <div className="flex w-full h-full items-center justify-center  bg-gray-300 rounded  dark:bg-gray-700">
+                      <div className="flex w-full md:h-full h-[280px] items-center justify-center  bg-gray-300 rounde">
                         <svg
                           className="w-10 h-auto text-gray-200 dark:text-gray-600"
                           aria-hidden="true"
