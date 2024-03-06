@@ -1,16 +1,20 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import { cx } from "../../utils/all";
 
-export default function CategoryLabel({ categories }) {
+export default function CategoryLabel({ categories, className }) {
   return (
     <div className="flex gap-3">
       {categories &&
-        categories.slice(0).map((category) => (
-          <Link href="" key={category.id}>
-            <label className="inline-block text-xs  tracking-wider uppercase mt-4 text-primary-600 font-semibold">
-              {category.name}
-            </label>
-          </Link>
+        categories.slice().map((category, index) => (
+          <label
+            key={index}
+            className={cx(
+              "inline-block text-sm  tracking-wider uppercase  text-primary-600 font-semibold bg-primary-300 py-[4px] px-[8px] rounded-sm",
+              className
+            )}
+          >
+            {category.name}
+          </label>
         ))}
     </div>
   );

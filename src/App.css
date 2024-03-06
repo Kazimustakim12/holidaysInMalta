@@ -50,3 +50,23 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 45px;
 }
+
+.post-content > P {
+  margin-bottom: 1.2rem;
+}
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  color: #000;
+  font-family: var(--wp--preset--font-family--heading);
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+.post-content > h2 {
+  font-weight: 600;
+  font-size: clamp(1.85rem, 1.85rem + ((1vw - 0.2rem) * 1.083), 2.5rem);
+}

@@ -1,10 +1,24 @@
-export default function Loading() {
+import { cx } from "../../utils/all";
+
+export default function Loading({ numberOfCardsPrelaoder = 6 }) {
   return (
-    <div className="mt-10 grid gap-10 md:grid-cols-2 lg:gap-10 xl:grid-cols-3">
-      {new Array(6).fill().map((item, index) => (
+    <div
+      className={cx(
+        "mt-10 grid gap-10 md:grid-cols-2 lg:gap-10 ",
+        numberOfCardsPrelaoder ? "xl:grid-cols-3" : "xl:grid-cols-3"
+      )}
+    >
+      {new Array(numberOfCardsPrelaoder).fill().map((item, index) => (
         // eslint-disable-next-line react/no-array-index-key
         <div key={index}>
-          <SkeletonImg />
+          <div
+            role="status"
+            className="group cursor-pointer bg-white p-5 rounded-3xl"
+          >
+            <div className="animate-pulse overflow-hidden rounded-md">
+              <SkeletonImg />
+            </div>
+          </div>
         </div>
       ))}
     </div>

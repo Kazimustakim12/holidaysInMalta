@@ -1,12 +1,10 @@
-import { lazy, useEffect, useState } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import AboutSpace from "../components/AboutSpace";
 import AgentInfo from "../components/AgentInfo";
-// import BannerSlider from "../components/BannerSlider";
 import CompanyInfo from "../components/CompanyInfo";
 import FloatContainer from "../components/FloatContainer";
 import Map from "../components/Map";
 import ReviewSlider from "../components/ReviewSlider";
-// import { Spinner } from "flowbite-react";
 
 const BannerSlider = lazy(() => import("../components/BannerSlider"));
 
@@ -77,7 +75,9 @@ const Home = () => {
       ) : (
         <main>
           <div className="bg-primary-400 bg-[url('./assets/bg_transparent.png')] bg-cover bg-no-repeat bg-blend-color-burn">
-            <BannerSlider imagesArray={currentData?.imagesArray} />
+            <Suspense fallback={<span>Loading....</span>}>
+              <BannerSlider imagesArray={currentData?.imagesArray} />
+            </Suspense>
           </div>
           <div className="container relative mt-[-40px] lg:mt-[-80px] z-10">
             <FloatContainer

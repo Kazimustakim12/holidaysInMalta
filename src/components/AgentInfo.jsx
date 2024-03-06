@@ -47,7 +47,7 @@ const AgentInfo = ({ agentDetails, loading }) => {
                   </h3>
                   <div className="flex flex-col">
                     <a
-                      href={`tel:${item.numer}`}
+                      href={`tel:${item.number}`}
                       className="text-sm pt-2 font-bold hover:text-primary-600 cursor-pointer "
                     >
                       {item.number}
@@ -61,7 +61,7 @@ const AgentInfo = ({ agentDetails, loading }) => {
                   </div>
                 </div>
               </div>
-              <div className="cta-btn flex  gap-2 mt-4">
+              <div className="cta-btn flex md:flex-row xs:flex-row flex-col  gap-2 mt-4">
                 <a
                   href={`tel:${item.number}`}
                   className="w-full bg-primary-600 py-3 px-4 transition-all border border-transparent text-white flex items-center justify-center  rounded-xl cursor-pointer enabled:hover:bg-primary-500 hover:text-primary-600 group hover:bg-primary-500 hover:border hover:border-primary-600  font-bold text-sm"
