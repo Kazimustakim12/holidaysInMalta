@@ -61,7 +61,7 @@
     @apply p-2 px-3  rounded-md bg-primary-600 text-white mx-2;
   }
   .post-content table {
-    @apply w-full text-sm text-left rtl:text-right text-gray-500;
+    @apply bg-white border border-collapse border-slate-400 shadow-sm text-sm w-full;
   }
   .post-content thead th {
     @apply px-6 py-3;
