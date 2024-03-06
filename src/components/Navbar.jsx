@@ -26,6 +26,16 @@ const Navbar = () => {
               Blogs
             </NavLink>
           </li>
+          <li className="text-xl text-black font-medium hover:font-semibold hover:text-primary-600">
+            <a
+              href="#contact"
+              className={({ isActive }) =>
+                isActive ? "text-primary-600 font-semibold" : ""
+              }
+            >
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
     </>

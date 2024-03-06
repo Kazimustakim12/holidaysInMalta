@@ -95,7 +95,10 @@ const Home = () => {
                 <AboutSpace aboutDetail={currentData?.aboutInfo} />
               </div>
               <div className="lg:w-4/12 w-full ">
-                <div className="bg-secondary-500 rounded-3xl overflow-hidden md:flex lg:block">
+                <div
+                  className="bg-secondary-500 rounded-3xl overflow-hidden md:flex lg:block"
+                  id="contact"
+                >
                   <AgentInfo agentDetails={currentData?.agentInfo} />
                   <CompanyInfo compnayInfo={currentData?.companyInfo} />
                 </div>

@@ -43,7 +43,7 @@ const Header = () => {
               <GrInstagram className="fill-primary-600 w-5 h-5" />
             </a>
             <a
-              href="https://www.instagram.com/holidaysinmalta.eu"
+              href="https://facebook.com/holidaysinmalta.eu"
               className="w-10 h-10 p-2 bg-white flex items-center justify-center rounded-md"
             >
               {/* <FacebookIcon className="fill-primary-600" /> */}

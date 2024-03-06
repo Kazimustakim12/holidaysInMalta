@@ -98,7 +98,7 @@ const BlogDetails = ({ post, loading }) => {
             </div>
           </div>
           {featuredImage?.node?.sourceUrl == null ? (
-            <div className="flex w-full h-full items-center justify-center  bg-gray-300 rounded  dark:bg-gray-700 my-11 h-[420px] object-cover">
+            <div className="flex w-full  items-center justify-center  bg-gray-300 rounded  dark:bg-gray-700 my-11 h-[420px] object-cover">
               <svg
                 className="w-10 h-10 text-gray-200 dark:text-gray-600"
                 aria-hidden="true"
@@ -122,53 +122,6 @@ const BlogDetails = ({ post, loading }) => {
               className="post-content"
               dangerouslySetInnerHTML={{ __html: content }}
             ></div>
-
-            {/* <div className="mt-10 flex rounded-md border border-gray-3">
-              <button className="group p-4 sm:p-7.5 ease-in duration-200 hover:bg-gray rounded-l-md text-left border-r border-gray-3">
-                <span className="flex items-center gap-4 group-hover:text-primary">
-                  <svg
-                    className="fill-current"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M21 11.175H4.98748L11.3625 4.6875C11.7 4.35 11.7 3.825 11.3625 3.4875C11.025 3.15 10.5 3.15 10.1625 3.4875L2.39998 11.3625C2.06248 11.7 2.06248 12.225 2.39998 12.5625L10.1625 20.4375C10.3125 20.5875 10.5375 20.7 10.7625 20.7C10.9875 20.7 11.175 20.625 11.3625 20.475C11.7 20.1375 11.7 19.6125 11.3625 19.275L5.02498 12.8625H21C21.45 12.8625 21.825 12.4875 21.825 12.0375C21.825 11.55 21.45 11.175 21 11.175Z"
-                      fill=""
-                    ></path>
-                  </svg>
-                  PREVIOUS POST
-                </span>
-                <p className="hidden sm:block text-custom-sm mt-4 text-body">
-                  At vero eos et accusamus et iusto dignissimos ducimus qui
-                  blanditiis praesentium.
-                </p>
-              </button>
-              <button className="group p-4 sm:p-7.5 ease-in duration-200 hover:bg-gray rounded-r-md text-right">
-                <span className="flex items-center justify-end gap-4 group-hover:text-primary">
-                  NEXT POST
-                  <svg
-                    className="fill-current"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M21.6 11.4L13.8375 3.52498C13.5 3.18748 12.975 3.18748 12.6375 3.52498C12.3 3.86248 12.3 4.38748 12.6375 4.72498L18.9375 11.1375H3.00005C2.55005 11.1375 2.17505 11.5125 2.17505 11.9625C2.17505 12.4125 2.55005 12.825 3.00005 12.825H19.0125L12.6375 19.3125C12.3 19.65 12.3 20.175 12.6375 20.5125C12.7875 20.6625 13.0125 20.7375 13.2375 20.7375C13.4625 20.7375 13.6875 20.6625 13.8375 20.475L21.6 12.6C21.9375 12.2625 21.9375 11.7375 21.6 11.4Z"
-                      fill=""
-                    ></path>
-                  </svg>
-                </span>
-                <p className="hidden sm:block text-custom-sm mt-4 text-body">
-                  Dignissimos ducimus qui blanditiis praesentiu deleniti atque
-                  corrupti quos dolores
-                </p>
-              </button>
-            </div> */}
           </div>
         </div>
       )}
