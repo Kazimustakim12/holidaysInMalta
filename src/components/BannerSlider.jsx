@@ -118,6 +118,7 @@ const BannerSlider = ({ imagesArray = [], loading }) => {
                       className="h-full w-full object-cover rounded-3xl"
                       src={image.src}
                       alt={image.alt}
+                      fetchpriority="high"
                       loading="lazy"
                     />
                   </SwiperSlide>
