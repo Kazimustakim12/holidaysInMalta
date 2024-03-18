@@ -72,7 +72,7 @@ const AgentInfo = ({ agentDetails, loading }) => {
                 <a
                   href={`https://api.whatsapp.com/send?phone=${item.whatsappNumber}`}
                   size="md"
-                  className="w-full text-white py-3 px-4 flex items-center border border-transparent justify-center text-sm rounded-xl cursor-pointer bg-sucess-600 enabled:hover:bg-green-500 hover:text-white group hover:bg-green-500 hover:border hover:border-green-600  font-bold "
+                  className="w-full text-white py-3 px-4 flex items-center border border-transparent justify-center text-sm rounded-xl cursor-pointer bg-sucess-600 enabled:hover:bg-sucess-500  hover:text-sucess-600 hover:bg-sucess-500 hover:border hover:border-sucess-600  font-bold "
                 >
                   <WhatsApp className="fill-white mr-3 group-hover:fill-white-600" />
                   WhatsApp me

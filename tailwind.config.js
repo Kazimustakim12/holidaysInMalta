@@ -46,6 +46,7 @@ export default {
         "secondary-500": "#98C3A4",
         "secondary-600": "#5A7D64",
         "sucess-600": "#3BC751",
+        "sucess-500": "#c6ffd0",
         "light-gray-100": "#D9D9D9",
         "light-gray-200": "#B1B1B1",
       },

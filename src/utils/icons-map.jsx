@@ -12,6 +12,7 @@ import * as SvgIconsComponent from "../components/IconSvg";
  */
 export const getIconComponentByName = (name, className) => {
   const ComponentsMap = {
+    agoda: SvgIconsComponent.AgodaIcon,
     airbnb: SvgIconsComponent.AirbnbIcon,
     tripadvisor: SvgIconsComponent.TripAdvisor,
     guest: SvgIconsComponent.UserIcon,
